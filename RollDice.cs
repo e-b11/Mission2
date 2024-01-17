@@ -11,13 +11,13 @@ namespace Mission2
         //Import Random class
         Random rnd = new Random();
         
-        //Method that will simulate the rolling of two dice, and putting the results in an array
+        //Method that will simulate the rolling of two six-sided dice, and putting the results in an array
         public int[] RollResults(int num)
         {          
             //Create an array for the rolls, that is the length of the number of rolls the user requested
             int[] rolls = new int[num]; 
             
-            //Loop through and roll two dice, then add them together and put the result in an array
+            //Loop through and roll two six-sided dice, then add them together and put the result in an array
             for (int i = 0; i<num; i++)
             {
                 int Dice1 = rnd.Next(1, 7);

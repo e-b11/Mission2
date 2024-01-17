@@ -1,4 +1,7 @@
-﻿using Mission2;
+﻿//Author: Emma Bastian
+//Description: Simulate the results of rolling two six-sided dice, and then show the results in a histogram
+
+using Mission2;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 internal class Program
@@ -39,8 +42,7 @@ internal class Program
             }
 
             //Turn the number of occurences for the number into a percentage of the number of rolls, then round/convert it to an integer
-            double rollPercent = (double)numberOccurences / numRolls;
-            rollPercent *= 100;
+            double rollPercent = (double)numberOccurences / numRolls * 100;
             int roundedPercent = (int)Math.Round(rollPercent);
             
             //Concatenate an output of the current number, and an asteric for each 1 percent of the number of rolls the current number was. Should look like a histogram at the end. 
